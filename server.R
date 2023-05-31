@@ -109,7 +109,7 @@ function(input, output) {
         scale_y_continuous(name = "Average Severity Rating (0-10)",limits = c(0,10))
       
       
-      mh_plotly <- ggplotly(mh_plotly, tooltip = "text")
+      mh_plotly <- ggplotly(mh_plotly)
       return(ggplotly(mh_plotly))
     })
 }
