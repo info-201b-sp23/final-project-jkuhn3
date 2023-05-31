@@ -1,5 +1,5 @@
-# Title of Your Final Project Here 
-## INFO 201 "Foundational Skills for Data Science" — Winter 2023
+# Music and Mental Health 
+## INFO 201 "Foundational Skills for Data Science" — Spring 2023
 
 Authors: Adriana Vassek (vasseka@uw.edu), Aarushi Seetalakshmi (baarush@uw.edu), Jainish Malhotra (jainish@uw.edu), Zach Hyde (zhyde@uw.edu), and Jason Kuhn (jkuhn3@uw.edu)
 
