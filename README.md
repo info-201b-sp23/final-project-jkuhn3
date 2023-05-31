@@ -9,8 +9,6 @@ Please create the necessary files for your multi-page Shiny app in this GitHub r
 
 When you are finished, please add the text from your introductory and concluding pages below. You might want to use this GitHub repository as part of your digital portfolio, so you want this README.md to offer a brief description of the project and key takeaways.
 
-Feel free to delete these instructions for your final README.md file and to make your GitHub repository public if you would like others to be able to see it. 
-
 # Introduction
 Major Questions
 
