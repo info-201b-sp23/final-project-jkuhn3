@@ -36,7 +36,7 @@ ui <- fluidPage(
      the age of the respondent. We can see from this chart that the age range of respondents fall under the
      18-25 year old range. We can also see that the effect on mood that music most commonly had on the respondent 
      is improvement of mental health symptoms. Music as a medium seems to have a self reported
-     improvement of mental health overall,")
+     improvement of mental health overall.")
 )
 
 server <- function(input, output) {
