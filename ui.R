@@ -4,7 +4,11 @@ library(dplyr)
 library(plotly)
 library(scales)
 library(tidyverse)
+library(bslib)
+library(shinythemes)
 
+intro_theme <- shinytheme("sandstone"
+)
 
 mental_music <- read.csv("mental_music_df.csv")
 anxiety_df <- mental_music %>% group_by(Hours.per.day) %>% 
@@ -61,7 +65,9 @@ mental_music_df <- mental_music_df %>% pivot_longer(!"Age",
                                                     values_to = "Average_Symptoms")
 
 
-ui <- navbarPage(
+ui <- fluidPage(theme = intro_theme,
+  
+  navbarPage(
 
   
   # Title
@@ -149,7 +155,7 @@ ui <- navbarPage(
                    selected = "OCD")
                ),
                mainPanel(
-                 h1("Mental Illness Severity vs Age"),
+                 h1("Scatterplot of Time vs Choice of Y-axis"),
                  plotlyOutput("mh_plotly"),
                  p("This graphshows the correlation between the average severity of each mental
           illness compared to age. Our goal with this chart was create a visual representation
@@ -175,7 +181,7 @@ ui <- navbarPage(
                  selectInput("effect", "Effect on Mood", choices = c("Improve", "No effect", "Worsen", "All effects"))
                ),
                mainPanel(
-                 plotOutput("chart")
+                 plotlyOutput("chart")
                )
              )
     ),
@@ -202,4 +208,5 @@ ui <- navbarPage(
              h5(" To summarize, these 3 takeawys really structure our argument on the impacts of music on mental health. Finding anomalies in the data with the help of visualizations has lead to these findings and potential solutions to different mental helath issues.")
     )
   
+)
 )
