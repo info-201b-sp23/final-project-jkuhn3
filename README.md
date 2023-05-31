@@ -1,9 +1,9 @@
 # Title of Your Final Project Here 
 ## INFO 201 "Foundational Skills for Data Science" — Winter 2023
 
-Authors: Your names here
+Authors: Adriana Vassek (vasseka@uw.edu), Aarushi Seetalakshmi (baarush@uw.edu), Jainish Malhotra (jainish@uw.edu), Zach Hyde (zhyde@uw.edu), and Jason Kuhn (jkuhn3@uw.edu)
 
-**Link: Link to your Shiny App here**
+(https://jainish.shinyapps.io/group_project/)
 
 Please create the necessary files for your multi-page Shiny app in this GitHub repository. Consult the Canvas assignment for more details. Be sure to publish your app on Shinyapps.io.
 
