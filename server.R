@@ -75,7 +75,7 @@ function(input, output) {
     return(ggplotly(hours_listened))
     })
     
-    output$chart <- renderPlot({
+    output$chart <- renderPlotly({
       if (input$effect == "All effects") {
         filtered_df <- chart_3_df
       } else {
@@ -83,7 +83,7 @@ function(input, output) {
           filter(Music.effects == input$effect)
       }
       
-      ggplot(filtered_df) +
+      chart1 <- ggplot(data = filtered_df) +
         geom_bar(mapping = aes(fill = Music.effects, x = Age.group), position = "stack") +
         scale_fill_manual(values = c("springgreen3", "khaki2", "tomato2")) +
         labs(
@@ -91,6 +91,7 @@ function(input, output) {
           y = "# of Respondents",
           fill = "Effect on Mood"
         )
+      return(ggplotly(chart1))
     })
     
     output$mh_plotly<- renderPlotly({
