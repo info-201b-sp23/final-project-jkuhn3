@@ -149,7 +149,7 @@ ui <- navbarPage(
                    selected = "OCD")
                ),
                mainPanel(
-                 h1("Scatterplot of Time vs Choice of Y-axis"),
+                 h1("Mental Illness Severity vs Age"),
                  plotlyOutput("mh_plotly"),
                  p("This graphshows the correlation between the average severity of each mental
           illness compared to age. Our goal with this chart was create a visual representation
